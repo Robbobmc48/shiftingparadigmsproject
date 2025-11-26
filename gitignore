@@ -1,0 +1,11 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Netlify deploy artifacts (just in case)
+netlify.toml
+
+# Temporary or backup files
+*.zip
+*.bak
+*.tmp
