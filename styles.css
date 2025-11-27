@@ -13,10 +13,22 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background: var(--bg);
+
+  /* Global forest background on all pages */
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,.35), rgba(0,0,0,.35)),
+    url("assets/forest-hero.jpg") center/cover fixed no-repeat;
+
   color: var(--ink);
 }
 
+/* Keep cards readable on top of the forest */
+.card {
+  background: var(--panel); /* already #ffffffd9 */
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px;
+}
 a {
   color: inherit;
   text-decoration: none;
