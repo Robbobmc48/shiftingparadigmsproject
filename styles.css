@@ -417,3 +417,201 @@ form textarea {
 .paypal-wrapper {
   margin-top: 0.25rem;
 }
+
+/* === Workbook pages === */
+
+/* Main page wrapper for workbook pages */
+.page-workbook {
+  /* gives breathing room so content isn't jammed against the top */
+  padding-top: 3.5rem;
+}
+
+/* Hero section for workbook pages (shorter than full landing hero) */
+.hero-workbook {
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.hero-workbook .container {
+  max-width: 900px;
+}
+
+/* Eyebrow label above titles (e.g., "Survivor Workbook") */
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #e5e7eb;
+  margin-bottom: 0.5rem;
+  opacity: 0.95;
+}
+
+/* Subtitle under h1 in hero */
+.subtitle {
+  margin-top: 0.5rem;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 640px;
+  color: #e5e7eb;
+}
+
+/* Sections on workbook pages */
+.section {
+  padding: 28px 0;
+}
+
+/* Slightly narrower text column for readability */
+.container.narrow {
+  max-width: 760px;
+}
+
+/* Block-style sections */
+.section-block {
+  position: relative;
+}
+
+.section-block .container {
+  position: relative;
+}
+
+/* Alternate section with subtle panel look for rhythm */
+.section-block.alt {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+/* Intro section sits on a soft panel for readability against forest bg */
+.section-intro {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* Download section with centered content */
+.section-download {
+  text-align: center;
+}
+
+/* Exercise cards inside workbook sections */
+.exercise-card {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.4rem;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+}
+
+.exercise-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+}
+
+.exercise-card ol {
+  padding-left: 1.1rem;
+  margin: 0.35rem 0 0.75rem;
+}
+
+.exercise-card .note {
+  font-size: 0.9rem;
+  color: #4b5563;
+  font-style: italic;
+}
+
+/* Quote-style text blocks used in professional workbook */
+.quote {
+  margin: 0.75rem 0;
+  padding-left: 0.75rem;
+  border-left: 3px solid #d1d5db;
+  font-style: italic;
+  color: #374151;
+}
+
+/* Text notes outside of cards */
+.note {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Buttons used on workbook pages */
+.btn-outline {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  background: transparent;
+  color: #e5edff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn-outline:hover {
+  background: rgba(15, 23, 42, 0.35);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.45);
+}
+
+/* Disabled download button placeholder */
+.btn-disabled {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: 1px dashed #d1d5db;
+  background: #f9fafb;
+  color: #6b7280;
+  font-weight: 600;
+  cursor: not-allowed;
+}
+
+/* Text-style link button (for use on homepage workbooks section) */
+.btn-link {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  box-shadow: none;
+}
+
+.btn-link:hover {
+  filter: brightness(1.05);
+}
+
+/* Workbook cards grid (used on homepage if you add the section) */
+.workbook-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 1.25rem;
+}
+
+.workbook-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  padding: 16px 18px;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+}
+
+.workbook-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+}
+
+.workbook-card p {
+  margin: 0 0 0.6rem;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+@media (max-width: 800px) {
+  .workbook-grid {
+    grid-template-columns: 1fr;
+  }
+}
