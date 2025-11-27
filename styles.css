@@ -45,7 +45,14 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 0;
+
+  /* Added for readability on forest bg */
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(4px);
+
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
 }
 
 .nav .brand {
@@ -70,6 +77,14 @@ a {
 
 .nav .links a:hover {
   opacity: 1;
+}
+
+/* Make the nav readable on top of the forest background */
+.nav {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+  padding: 12px 16px;
 }
 
 /* === HERO (forest background, crisp & readable) === */
