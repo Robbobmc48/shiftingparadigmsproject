@@ -615,3 +615,30 @@ form textarea {
     grid-template-columns: 1fr;
   }
 }
+
+/* === Download panels for workbooks === */
+.download-panel {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  background: #eef2ff;
+  border: 1px solid #e5e7eb;
+}
+
+.download-panel h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.download-panel p {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+/* optional: tighten the bottom text */
+.download-panel .notice {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+}
