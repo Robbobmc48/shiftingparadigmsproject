@@ -874,3 +874,12 @@ nav.links a:focus {
     flex-direction: column;
   }
 }
+
+/* === Ensure logo displays at reasonable size everywhere === */
+
+.brand .logo {
+  display: block;          /* helps with layout control */
+  max-width: 200px;        /* or whatever max width you want */
+  width: auto;             /* keep natural width if smaller than max */
+  height: auto;            /* maintain aspect ratio */
+}
