@@ -883,3 +883,13 @@ nav.links a:focus {
   width: auto;             /* keep natural width if smaller than max */
   height: auto;            /* maintain aspect ratio */
 }
+
+/* ===== ACES Self-Test Logo Fix ===== */
+
+.aces-logo {
+  display: block;
+  max-width: 240px;   /* Adjust this number to make logo bigger or smaller */
+  width: 100%;
+  height: auto;
+  margin: 2rem auto 1.5rem; /* Centers it beautifully */
+}
