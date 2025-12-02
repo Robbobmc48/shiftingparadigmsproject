@@ -818,3 +818,19 @@ nav.links a:focus {
     font-size: 0.95rem;
   }
 }
+
+.section {
+  padding: 2.5rem 1.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: 10px;
+}
+
+.section-alt {
+  padding: 2.5rem 1.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  background: rgba(240, 243, 250, 0.9);
+  border-radius: 10px;
+}
