@@ -834,3 +834,43 @@ nav.links a:focus {
   background: rgba(240, 243, 250, 0.9);
   border-radius: 10px;
 }
+
+/* === Voice Lab Layout & Styling === */
+
+.voice-lab-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+  align-items: flex-start;
+  margin-top: 1.25rem;
+}
+
+.voice-lab-column {
+  flex: 1 1 260px;
+}
+
+.voice-lab-divider {
+  margin: 2.5rem 0 2rem;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.voice-lab-subsection h3 {
+  margin-top: 0;
+}
+
+.voice-lab-subsection h4 {
+  margin-top: 0.75rem;
+}
+
+.voice-lab-cta {
+  margin-top: 1.75rem;
+  font-weight: 500;
+}
+
+/* Responsive stacking for smaller screens */
+@media (max-width: 768px) {
+  .voice-lab-grid {
+    flex-direction: column;
+  }
+}
