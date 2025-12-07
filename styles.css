@@ -873,6 +873,13 @@ nav.links a:focus {
   .voice-lab-grid {
     flex-direction: column;
   }
+
+  /* Fix header navigation contrast */
+.nav .links a {
+  color: #000000;   /* solid black */
+  font-weight: 500;
+}
+  
 }
 
 /* === Ensure logo displays at reasonable size everywhere === */
