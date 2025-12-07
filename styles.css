@@ -879,8 +879,12 @@ nav.links a:focus {
   color: #000000;   /* solid black */
   font-weight: 500;
 }
-  
+  nav .links a:hover {
+  color: #111827;   /* dark charcoal */
+  text-decoration: underline;
 }
+
+  }
 
 /* === Ensure logo displays at reasonable size everywhere === */
 
