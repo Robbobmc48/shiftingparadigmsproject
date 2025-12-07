@@ -912,3 +912,9 @@ header.nav .links a {
 header.nav .links a:hover {
   color: #111827 !important;
 }
+
+figure img {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+}
