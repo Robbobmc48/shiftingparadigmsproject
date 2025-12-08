@@ -450,19 +450,45 @@
   </div>
 </section>
 
-<!-- SUBSCRIBE SECTION -->
-<section id="subscribe" class="section card">
-  <h2>Join the mailing list</h2>
-  <form name="newsletter" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you/">
-    <input type="hidden" name="form-name" value="newsletter"/>
-    <p style="display:none;"><label>Don’t fill this out: <input name="bot-field"/></label></p>
-    <div class="row">
-      <input type="text" name="name" placeholder="Name (optional)"/>
-      <input type="email" name="email" placeholder="Email" required/>
-    </div>
-    <button class="btn" type="submit">Subscribe</button>
-    <p class="notice">Low volume. No spam. Unsubscribe anytime.</p>
-  </form>
+<form name="subscribe" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+
+  <!-- Required for Netlify -->
+  <input type="hidden" name="form-name" value="subscribe">
+
+  <!-- Honeypot (hidden from real visitors) -->
+  <p style="display:none;">
+    <label>Don’t fill this out: <input name="bot-field"></label>
+  </p>
+
+  <p class="notice">
+    Occasional reflections, essays, and practical tools for people navigating complex trauma.
+    Low volume. No pressure.
+  </p>
+
+  <div class="row">
+    <p>
+      <label for="subscribe-name">Name (optional)</label><br>
+      <input
+        type="text"
+        id="subscribe-name"
+        name="name"
+        placeholder="What you’d like me to call you">
+    </p>
+
+    <p>
+      <label for="subscribe-email">Email</label><br>
+      <input
+        type="email"
+        id="subscribe-email"
+        name="email"
+        placeholder="you@example.com"
+        required>
+    </p>
+  </div>
+
+  <button class="btn" type="submit">Subscribe</button>
+
+</form>
 </section>
 
 <!-- CONTACT + SUPPORT SECTION -->
