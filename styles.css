@@ -913,8 +913,17 @@ header.nav .links a:hover {
   color: #111827 !important;
 }
 
+/* ===== Essay images inside <figure> elements ===== */
+
+figure {
+  margin: 1.75rem auto;
+  text-align: center;
+}
+
 figure img {
-  max-width: 420px;
+  display: block;
+  max-width: 320px;  /* adjust this number if you want them larger/smaller */
   width: 100%;
   height: auto;
+  margin: 0 auto;
 }
