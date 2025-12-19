@@ -4,12 +4,17 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Shifting Paradigms Project</title>
+
+  <meta name="description" content="Trauma Literacy & Peer Support Consultancy — survivor-centered education and support grounded in trauma science and lived experience."/>
+
   <link rel="icon" href="assets/logo.png"/>
   <link rel="stylesheet" href="styles.css"/>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <header class="site-header">
@@ -19,7 +24,7 @@
       <p class="tagline">Trauma Literacy &amp; Peer Support Consultancy</p>
     </div>
 
-    <nav class="links">
+    <nav class="links" aria-label="Primary navigation">
       <a href="index.html#top">Home</a>
       <a href="about.html">About</a>
       <a href="workbooks.html">Workbooks</a>
@@ -44,14 +49,14 @@
       <h1>Walking a Mile in My Nervous System</h1>
 
       <p class="hero-subtitle">
-        Understanding trauma isn’t about reliving the past — it’s about finally listening
+        Understanding trauma isn’t about reliving the past, it’s about finally listening
         to your body that carried you through it. I help people who grew up in chaos,
         control, or chronic invalidation decode their survival patterns and begin to live
         from agency instead of fear.
       </p>
 
       <p class="hero-note">
-        A nervous system shaped by the unthinkable isn’t defective — but geniusly adaptive.
+        A nervous system shaped by the unthinkable isn’t defective, but intricately and geniusly adaptive.
         I help you learn how to work with it, not against it.
       </p>
     </div>
@@ -452,11 +457,7 @@
 <section id="subscribe" class="section">
   <div class="card">
     <form name="subscribe" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-
-      <!-- Required for Netlify -->
       <input type="hidden" name="form-name" value="subscribe">
-
-      <!-- Honeypot (hidden from real visitors) -->
       <p style="display:none;">
         <label>Don’t fill this out: <input name="bot-field"></label>
       </p>
@@ -488,7 +489,6 @@
       </div>
 
       <button class="btn" type="submit">Subscribe</button>
-
     </form>
   </div>
 </section>
@@ -519,7 +519,27 @@
 
   <div class="card">
     <h3>Support the Work</h3>
-    <p>Donations help keep writing and low-cost education accessible.</p>
+
+    <p>
+      Donations help offset the cost associated with writing and keeping low-cost education accessible.
+    </p>
+
+    <p style="font-size:0.95rem; line-height:1.4;">
+      <strong>Important:</strong> Donations are <strong>considered</strong> a digital product.
+      <strong>No items are shipped</strong> therefore no tracking numbers are applied to a transaction.
+      Conversely, you will receive a a proper receipt from Stripe or PayPal for your records.
+    </p>
+
+    <p style="font-size:0.95rem; line-height:1.4;">
+      If you meant to purchase a <strong>digital workbook</strong> or schedule a <strong>phone session with me</strong>,
+      you must click the specific option at the top of the page to complete that purchase <a href="workbooks.html">Workbooks</a> or <a href="services.html">Services</a> pages
+      so your purchase is labeled correctly.
+    </p>
+
+    <p style="font-size:0.95rem; line-height:1.4;">
+      Questions or a receipt issue? Email:
+      <a href="mailto:shiftingparadigmsproject@gmail.com">shiftingparadigmsproject@gmail.com</a>
+    </p>
 
     <div class="donate-buttons">
       <!-- Stripe -->
@@ -529,7 +549,7 @@
         href="https://donate.stripe.com/00w4gBR9R0QyC7w07R64sE00"
         target="_blank"
         rel="noopener"
-        aria-label="Donate via Stripe"
+        aria-label="Donate via Stripe (no shipping; digital receipt)"
       >
         Donate with Stripe
       </a>
@@ -559,26 +579,31 @@
           method="post"
           target="_blank"
           style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;"
+          aria-label="Donate via PayPal (no shipping; digital receipt)"
         >
           <input
             class="pp-SG3MPJVEZTLV2"
             type="submit"
-            value="Support the Project"
+            value="Donate with PayPal"
           />
           <img
             src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg"
-            alt="cards"
+            alt="Accepted payment methods"
           />
 
           <section style="font-size: 0.75rem;">
             Powered by
             <img
               src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg"
-              alt="paypal"
+              alt="PayPal"
               style="height:0.875rem;vertical-align:middle;"
             />
           </section>
         </form>
+
+        <p style="font-size:0.85rem; margin-top:0.5rem; text-align:center;">
+          <em>No physical product shipping. No tracking. Receipts will be provided by PayPal.</em>
+        </p>
       </div>
     </div>
   </div>
@@ -593,5 +618,4 @@
 <footer class="container footer">© Shifting Paradigms Project</footer>
 
 </body>
-</html>
 </html>
