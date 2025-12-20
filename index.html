@@ -27,7 +27,10 @@
     <nav class="links" aria-label="Primary navigation">
       <a href="index.html#top">Home</a>
       <a href="about.html">About</a>
-      <a href="workbooks.html">Workbooks</a>
+
+      <!-- FIXED: workbooks.html does not exist. This jumps to the Workbooks section on the homepage. -->
+      <a href="index.html#workbooks">Workbooks</a>
+
       <a href="guides.html">Guides</a>
       <a href="resources.html">Resources</a>
       <a href="essays.html">Essays</a>
@@ -525,19 +528,18 @@
     </p>
 
     <p style="font-size:0.95rem; line-height:1.4;">
-      <strong>Important:</strong> Donations are <strong>considered</strong> a digital product.
-      <strong>No items are shipped</strong> therefore no tracking numbers are applied to a transaction.
-      Conversely, you will receive a a proper receipt from Stripe or PayPal for your records.
+      <strong>Important:</strong> Donations are support-only contributions.
+      <strong>No items are shipped</strong>, so no tracking numbers apply.
+      You will receive a receipt from Stripe or PayPal for your records.
     </p>
 
     <p style="font-size:0.95rem; line-height:1.4;">
-      If you meant to purchase a <strong>digital workbook</strong> or schedule a <strong>phone session with me</strong>,
-      you must click the specific option at the top of the page to complete that purchase <a href="workbooks.html">Workbooks</a> or <a href="services.html">Services</a> pages
-      so your purchase is labeled correctly.
+      If you meant to purchase a <strong>digital workbook</strong> or schedule a <strong>phone session</strong>,
+      please use the specific options at the top of the page (Workbooks or Services) so your transaction is labeled correctly.
     </p>
 
     <p style="font-size:0.95rem; line-height:1.4;">
-      Questions or a receipt issue? Please Email:
+      Questions or a receipt issue? Please email:
       <a href="mailto:robbobmc48@gmail.com">robbobmc48@gmail.com</a>
     </p>
 
@@ -549,7 +551,7 @@
         href="https://donate.stripe.com/00w4gBR9R0QyC7w07R64sE00"
         target="_blank"
         rel="noopener"
-        aria-label="Donate via Stripe (no shipping; digital receipt)"
+        aria-label="Donate via Stripe (no shipping; receipt provided)"
       >
         Donate with Stripe
       </a>
@@ -579,7 +581,7 @@
           method="post"
           target="_blank"
           style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;"
-          aria-label="Donate via PayPal (no shipping; digital receipt)"
+          aria-label="Donate via PayPal (no shipping; receipt provided)"
         >
           <input
             class="pp-SG3MPJVEZTLV2"
@@ -602,7 +604,7 @@
         </form>
 
         <p style="font-size:0.85rem; margin-top:0.5rem; text-align:center;">
-          <em>No physical product shipping. No tracking. Receipts will be provided by PayPal.</em>
+          <em>No physical shipping. No tracking. Receipts provided by PayPal.</em>
         </p>
       </div>
     </div>
@@ -616,6 +618,3 @@
 </p>
 
 <footer class="container footer">© Shifting Paradigms Project</footer>
-
-</body>
-</html>
