@@ -1080,3 +1080,6 @@ figure img {
 .start-here-module .ns-module-subtext {
   color: #1f2937; /* readable but softer than headline */
 }
+.ns-acc-item {
+  background: #ffffff;
+}
