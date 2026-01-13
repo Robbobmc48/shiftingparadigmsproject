@@ -821,7 +821,41 @@ I’m asking for help to keep this project online and available while I work tow
 </p>
 
 <footer class="container footer">© Shifting Paradigms Project</footer>
+<script>
+  (function () {
+    const accordion = document.querySelector("[data-accordion]");
+    if (!accordion) return;
 
+    const triggers = accordion.querySelectorAll(".ns-acc-trigger");
+
+    triggers.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const isExpanded = btn.getAttribute("aria-expanded") === "true";
+        const panelId = btn.getAttribute("aria-controls");
+        const panel = document.getElementById(panelId);
+
+        // Close all
+        triggers.forEach((otherBtn) => {
+          const otherPanel = document.getElementById(otherBtn.getAttribute("aria-controls"));
+          otherBtn.setAttribute("aria-expanded", "false");
+          if (otherPanel) otherPanel.hidden = true;
+
+          const icon = otherBtn.querySelector(".ns-acc-icon");
+          if (icon) icon.textContent = "+";
+        });
+
+        // Open the clicked one (unless it was already open)
+        if (!isExpanded && panel) {
+          btn.setAttribute("aria-expanded", "true");
+          panel.hidden = false;
+
+          const icon = btn.querySelector(".ns-acc-icon");
+          if (icon) icon.textContent = "×";
+        }
+      });
+    });
+  })();
+</script>
 </body>
 </html>
 </body>
