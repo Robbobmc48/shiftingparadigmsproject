@@ -927,3 +927,141 @@ figure img {
   height: auto;
   margin: 0 auto;
 }
+/* --- Nervous System Teaching Module (Accordion) --- */
+.start-here-module h2 {
+  margin: 0 0 0.35rem 0;
+  font-size: clamp(1.35rem, 1.1rem + 1vw, 1.9rem);
+  letter-spacing: -0.02em;
+}
+
+.ns-module-subtext {
+  margin: 0 0 1.25rem 0;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  opacity: 0.9;
+  max-width: 60ch;
+}
+
+.ns-accordion {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.ns-acc-item {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(6px);
+}
+
+.ns-acc-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.95rem 1rem;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.ns-acc-trigger:focus-visible {
+  outline: 3px solid rgba(0, 0, 0, 0.18);
+  outline-offset: 2px;
+  border-radius: 12px;
+}
+
+.ns-acc-title {
+  font-weight: 700;
+  font-size: 1.02rem;
+  line-height: 1.25;
+}
+
+.ns-acc-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.06);
+  flex: 0 0 auto;
+}
+
+.ns-acc-panel {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.ns-acc-panel p {
+  margin: 0.2rem 0 0.9rem 0;
+  line-height: 1.6;
+  max-width: 70ch;
+}
+
+.ns-acc-block {
+  margin: 0.85rem 0 0.9rem 0;
+  padding: 0.85rem 0.9rem;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.ns-acc-block h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.ns-acc-block ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.ns-acc-block li {
+  margin: 0.35rem 0;
+  line-height: 1.5;
+}
+
+.ns-acc-links {
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ns-link {
+  font-weight: 650;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.ns-dot {
+  opacity: 0.5;
+}
+
+/* Expanded state visuals */
+.ns-acc-trigger[aria-expanded="true"] .ns-acc-icon {
+  transform: rotate(45deg);
+  transition: transform 160ms ease;
+}
+
+.ns-acc-trigger[aria-expanded="false"] .ns-acc-icon {
+  transform: rotate(0deg);
+  transition: transform 160ms ease;
+}
+
+/* Mobile spacing tweaks */
+@media (max-width: 560px) {
+  .ns-acc-trigger {
+    padding: 0.9rem 0.85rem;
+  }
+  .ns-acc-panel {
+    padding: 0 0.85rem 0.95rem 0.85rem;
+  }
+}
