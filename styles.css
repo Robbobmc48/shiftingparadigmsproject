@@ -1065,3 +1065,11 @@ figure img {
     padding: 0 0.85rem 0.95rem 0.85rem;
   }
 }
+/* --- Contrast fix for Nervous System module --- */
+.start-here-module {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 18px;
+  padding: 1.6rem 1.6rem 1.8rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  margin-top: 1.5rem;
+}
