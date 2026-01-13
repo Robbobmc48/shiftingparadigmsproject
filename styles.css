@@ -1083,3 +1083,64 @@ figure img {
 .ns-acc-item {
   background: #ffffff;
 }
+.aces-guide {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 18px;
+  padding: 1.6rem 1.6rem 1.8rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  margin: 1.5rem 0;
+}
+
+.aces-guide h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: clamp(1.25rem, 1.05rem + 0.8vw, 1.7rem);
+  color: #0f172a;
+  letter-spacing: -0.02em;
+}
+
+.aces-subtext {
+  margin: 0 0 1rem 0;
+  color: #1f2937;
+  line-height: 1.65;
+  max-width: 70ch;
+}
+
+.aces-note {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  margin: 0.9rem 0 1.1rem 0;
+}
+
+.aces-note p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.aces-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  align-items: center;
+}
+
+.aces-button {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  background: #0f172a;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.aces-button:hover {
+  transform: translateY(-1px);
+}
+
+.aces-link {
+  font-weight: 650;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: #0f172a;
+}
