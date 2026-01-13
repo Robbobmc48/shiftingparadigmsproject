@@ -1073,3 +1073,10 @@ figure img {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
   margin-top: 1.5rem;
 }
+.start-here-module h2 {
+  color: #0f172a; /* deep slate, high contrast */
+}
+
+.start-here-module .ns-module-subtext {
+  color: #1f2937; /* readable but softer than headline */
+}
